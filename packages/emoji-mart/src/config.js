@@ -136,7 +136,8 @@ async function _init(props) {
     const category = Data.categories[categoryIndex]
 
     if (category.id == 'frequent') {
-      category.emojis = FrequentlyUsed.get(props)
+      // THE NEXT LINE IS A HACK THAT SAM PUT IN
+      category.emojis = FrequentlyUsed.get({ maxFrequentRows: 1, perLine: 9 })
     }
 
     if (!category.emojis || !category.emojis.length) {

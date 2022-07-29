@@ -595,6 +595,18 @@ export default class Picker extends Component {
 
       if (this.props.maxFrequentRows) {
         FrequentlyUsed.add(emojiData, this.props)
+
+        // BEGIN SAM HACK
+        const frequentlyUsedCategory = Data.categories.find(
+          (c) => c.id === 'frequent',
+        )
+        if (frequentlyUsedCategory) {
+          frequentlyUsedCategory.emojis = FrequentlyUsed.get({
+            maxFrequentRows: 1,
+            perLine: 9,
+          })
+        }
+        // END SAM HACK
       }
 
       this.props.onEmojiSelect(emojiData)
