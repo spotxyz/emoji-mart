@@ -1,6 +1,6 @@
 {
-  "name": "emoji-mart",
-  "version": "5.2.0",
+  "name": "@spotxyz/emoji-mart",
+  "version": "5.2.2",
   "description": "Emoji picker for the web",
   "license": "BSD-3-Clause",
   "homepage": "https://missiveapp.com/open/emoji-mart",
@@ -41,7 +41,7 @@
     "@parcel/transformer-inline-string": "2.3.2",
     "@parcel/transformer-sass": "2.3.2",
     "autoprefixer": "10.4.4",
-    "is-emoji-supported": "0.0.5",
+    "@spotxyz/is-emoji-supported": "0.0.7",
     "parcel": "2.3.2",
     "preact": "10.6.4"
   },

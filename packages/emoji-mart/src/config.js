@@ -6,6 +6,7 @@ import {
   SafeFlags,
   SearchIndex,
 } from './helpers'
+import { SPOT_FREQUENTLY_USED_ROWS } from './helpers/frequently-used'
 
 export let I18n = null
 export let Data = null
@@ -137,7 +138,10 @@ async function _init(props) {
 
     if (category.id == 'frequent') {
       // THE NEXT LINE IS A HACK THAT SAM PUT IN
-      category.emojis = FrequentlyUsed.get({ maxFrequentRows: 1, perLine: 9 })
+      category.emojis = FrequentlyUsed.get({
+        maxFrequentRows: SPOT_FREQUENTLY_USED_ROWS,
+        perLine: 9,
+      })
     }
 
     if (!category.emojis || !category.emojis.length) {

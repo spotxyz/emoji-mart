@@ -1315,6 +1315,11 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@spotxyz/is-emoji-supported@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@spotxyz/is-emoji-supported/-/is-emoji-supported-0.0.7.tgz#3fe7c93a00ab4c80aaa3aeba3257fa21d8f4b026"
+  integrity sha512-LD5MXfURIBIOP+YOfjY7bWW6BIkfWolJZyaDEAZ3NcQLsjQvrDV5JykJJTts9fBUoxWq0bYfbVBAfgYEnCWJVQ==
+
 "@swc/helpers@^0.2.11":
   version "0.2.14"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.2.14.tgz#20288c3627442339dd3d743c944f7043ee3590f0"
@@ -2512,11 +2517,6 @@ is-core-module@^2.8.1:
   integrity sha512-+5FPy5PnwmO3lvfMb0AsoPaBG+5KHUI0wYFXOtYPnVVVspTFUuMZNfNaNVRt3FZadstu2c8x23vykRW/NBoU6A==
   dependencies:
     has "^1.0.3"
-
-is-emoji-supported@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/is-emoji-supported/-/is-emoji-supported-0.0.5.tgz#f22301b22c63d6322935e829f39dfa59d03a7fe2"
-  integrity sha512-WOlXUhDDHxYqcSmFZis+xWhhqXiK2SU0iYiqmth5Ip0FHLZQAt9rKL5ahnilE8/86WH8tZ3bmNNNC+bTzamqlw==
 
 is-extglob@^2.1.1:
   version "2.1.1"

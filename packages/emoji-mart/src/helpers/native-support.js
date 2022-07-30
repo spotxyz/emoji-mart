@@ -1,4 +1,4 @@
-import { isEmojiSupported } from 'is-emoji-supported'
+import { isEmojiSupported } from '@spotxyz/is-emoji-supported'
 
 const VERSIONS = [
   { v: 14, emoji: '🫠' },

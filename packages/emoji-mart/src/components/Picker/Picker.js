@@ -8,6 +8,7 @@ import Icons from '../../icons'
 import { Emoji } from '../Emoji'
 import { Navigation } from '../Navigation'
 import { PureInlineComponent } from '../HOCs'
+import { SPOT_FREQUENTLY_USED_ROWS } from '../../helpers/frequently-used'
 
 const Performance = {
   rowsPerRender: 10,
@@ -602,7 +603,7 @@ export default class Picker extends Component {
         )
         if (frequentlyUsedCategory) {
           frequentlyUsedCategory.emojis = FrequentlyUsed.get({
-            maxFrequentRows: 1,
+            maxFrequentRows: SPOT_FREQUENTLY_USED_ROWS,
             perLine: 9,
           })
         }

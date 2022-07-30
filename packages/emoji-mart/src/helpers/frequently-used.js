@@ -90,4 +90,6 @@ function get({ maxFrequentRows, perLine }) {
   return emojiIds
 }
 
+export const SPOT_FREQUENTLY_USED_ROWS = 3
+
 export default { add, get }
